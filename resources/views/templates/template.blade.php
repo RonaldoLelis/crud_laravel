@@ -7,9 +7,16 @@
 	<script src="scripts/seu-script.js">	
 	</script>
 	
+	
 </head>
 <body>
-<div class="pai">
+	<!-- Just an image -->
+<nav class="navbar navbar-light bg-light">
+	<a class="navbar-brand" href="#">
+	  <!--img src="" width="30" height="30" alt=""-->
+	</a>
+  </nav>
+<div class="container">
  
  
  @yield('content')
