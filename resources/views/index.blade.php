@@ -10,7 +10,7 @@
         <h1 class="text-center">Livraria do Bosque</h1>
         </div>
         <div class="col-md-4 mt-3 mb-4">  
-            <a href="">
+        <a href="{{ url('books/create') }}">
                 <button class="btn btn-success">Cadastrar</button>
             </a>
         </div>
