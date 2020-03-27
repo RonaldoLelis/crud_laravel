@@ -44,7 +44,7 @@
                         <button class="btn btn-info">Visualizar</button>
                     </a>
                
-                    <a href="">
+                <a href="{{ url("books/$books->id/edit") }}">
                         <button class="btn btn-warning">Editar</button>
                     </a>
                
