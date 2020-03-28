@@ -16,7 +16,11 @@ class BookController extends Controller
         $this->objUser = new User();
         $this->objBook = new ModelBook();
     }
-    
+
+    public function login(){
+
+        return view('login');
+    }
     
     public function index()
     {
@@ -105,8 +109,9 @@ class BookController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-        //
+    public function destroy($id)    {
+        
+        $del = $this->objBook->destroy($id);  
+        return($del) ? "sim" : "não";
     }
 }

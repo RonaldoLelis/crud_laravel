@@ -17,7 +17,7 @@
     </div>
 
     <div class="col-sm-12 m-auto">
-
+        {{ csrf_field() }} 
         <table class="table">
             <thead class="thead-dark">
               <tr>
@@ -40,15 +40,15 @@
                 <td>{{ $user->name }}</td>
                 <td>{{ $books->price }}</td>
                 <td>
-                <a href="{{ url("books/$books->id") }}">
+                    <a href="{{ url("books/$books->id") }}">
                         <button class="btn btn-info">Visualizar</button>
                     </a>
                
-                <a href="{{ url("books/$books->id/edit") }}">
+                    <a href="{{ url("books/$books->id/edit") }}">
                         <button class="btn btn-warning">Editar</button>
                     </a>
                
-                    <a href="">
+                    <a href="{{ url("books/$books->id")}}" class="js-del">
                         <button class="btn btn-danger">Excluir</button>
                     </a>
                 <td>
@@ -60,7 +60,6 @@
     </div>
 
 </div>
-
 
     
 @endsection
