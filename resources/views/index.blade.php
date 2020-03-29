@@ -56,6 +56,8 @@
             @endforeach                         
             </tbody>
           </table>
+          <hr>
+          {{ $book->links() }}
 
     </div>
 
